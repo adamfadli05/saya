@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri - Adam Fadli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeff5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .container {
+            max-width: 700px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 2.8em;
+            color: #333;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideIn 1s ease forwards;
+            animation-delay: 1s;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #555;
+            margin-top: 25px;
+            opacity: 0;
+            animation: slideIn 1s ease forwards;
+            animation-delay: 1.5s;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+            margin: 0.5em 0;
+            opacity: 0;
+            animation: slideIn 1s ease forwards;
+            animation-delay: 2s;
+        }
+        .highlight {
+            color: #1e1e1f;
+            font-weight: bold;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #1e90ff;
+            opacity: 0;
+            animation: bounceIn 1.2s ease forwards;
+            animation-delay: 1s;
+        }
+        .social-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 2.5s;
+        }
+        .social-links a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #005f99;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section">
+            <img src="C:\Users\TOSHIBA\OneDrive\Dokumen\data adam ganteng\gambar saya.jpg" alt="Foto Profil Adam Fadli" class="profile-img">
+            <h1>Halo, Saya <span class="highlight">Adam Fadli</span></h1>
+            <p><strong>Usia:</strong> 19 tahun</p>
+            <p><strong>Universitas:</strong> UIN SSC</p>
+            <p><strong>Jurusan:</strong> Informatika</p>
+        </div>
+
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya Adam Fadli, seorang mahasiswa di UIN SSC yang bersemangat mengeksplorasi dunia teknologi. Saya percaya bahwa setiap tantangan adalah peluang untuk belajar dan berkembang. Saya senang menjelajahi ide-ide baru dan mengasah keterampilan saya. Bagi saya, "Belajar adalah investasi terbaik yang bisa kita lakukan untuk masa depan."</p>
+        </div>
+
+        <div class="section">
+            <h2>Kontak & Media Sosial</h2>
+            <p>Hubungi saya melalui media sosial berikut:</p>
+            <div class="social-links">
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/username" target="_blank">@damfad_</a></p>
+                <p><strong>Email:</strong> <a href="mailto:adamfadli997@gmail.com">adamfadli997@gmail.com</a></p>
+                <p><strong>Telepon:</strong> <a href="tel:+6285794403493">+62 857-9440-3493</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
